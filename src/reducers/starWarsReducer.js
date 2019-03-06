@@ -13,6 +13,7 @@ export const charsReducer = (state = initialState, action) => {
     // action types should be FETCHING, SUCCESS and FAILURE
     // your switch statement should handle all of these cases.
     case FETCHING:
+      console.log('Reducer: FETCHING');
       return {
         ...state,
         error: '',
